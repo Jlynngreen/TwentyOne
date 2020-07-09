@@ -68,7 +68,7 @@ namespace TwentyOne
                     }
                 }
             }
-
+            string answer = ""; //not in tutorial
             foreach (Player player in Players)
             {
                 while (!player.Stay)
@@ -79,7 +79,7 @@ namespace TwentyOne
                         Console.Write("{0} ", card.ToString());
                     }
                     Console.WriteLine("\n\nHit or stay?");
-                    string answer = Console.ReadLine().ToLower();
+                    answer = Console.ReadLine().ToLower(); //changed
                     if (answer == "stay")
                     {
                         player.Stay = true;
@@ -155,7 +155,7 @@ namespace TwentyOne
                 }
                 Console.WriteLine("Play again?");
                 Console.WriteLine("Play again?");
-                string answer = Console.ReadLine().ToLower();
+                answer = Console.ReadLine().ToLower();// changed
                 if (answer == "yes" || answer == "yeah")
                 {
                     player.isActivelyPlaying = true;
@@ -169,7 +169,7 @@ namespace TwentyOne
             }
             Console.WriteLine("Play again?");
             Console.WriteLine("Play again?");
-            string answer = Console.ReadLine().ToLower();
+            answer = Console.ReadLine().ToLower();
             if (answer == "yes" || answer == "yeah")
             {
 
@@ -186,3 +186,4 @@ namespace TwentyOne
         }
 
     }
+}
